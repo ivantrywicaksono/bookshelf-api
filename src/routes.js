@@ -3,7 +3,7 @@ const {
   getBooks,
   getBookById,
   editBookById,
-  deleteBookById
+  deleteBookById,
 } = require('./handler');
 
 const routes = [
@@ -31,7 +31,7 @@ const routes = [
     method: 'DELETE',
     path: '/books/{id}',
     handler: deleteBookById,
-  }
+  },
 ];
 
 module.exports = routes;
