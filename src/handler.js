@@ -1,7 +1,5 @@
-// const { nanoid } = require('nanoid');
-// const books = require('./books');
-import books from "./books.js";
-import { nanoid } from "nanoid";
+const { nanoid } = require('nanoid');
+const books = require('./books');
 
 const addBook = (request, h) => {
   const {
@@ -270,11 +268,10 @@ const deleteBookById = (request, h) => {
   return response;
 };
 
-// module.exports = {
-//   addBook,
-//   getBooks,
-//   getBookById,
-//   editBookById,
-//   deleteBookById,
-// };
-export {addBook, getBooks, getBookById, editBookById, deleteBookById};
+module.exports = {
+  addBook,
+  getBooks,
+  getBookById,
+  editBookById,
+  deleteBookById
+};

@@ -1,4 +1,10 @@
-import { addBook, getBooks, getBookById, editBookById, deleteBookById } from './handler.js';
+const {
+  addBook,
+  getBooks,
+  getBookById,
+  editBookById,
+  deleteBookById
+} = require('./handler');
 
 const routes = [
   {
@@ -28,4 +34,4 @@ const routes = [
   },
 ];
 
-export default routes;
+module.exports = routes;
